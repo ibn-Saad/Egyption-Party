@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* satrt nav ------------------------------------------------------ */
+
+nav {
+    position: fixed;
+    background-color: #000000;
+    width: 270px;
+   display: none;
+    color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+nav li a {
+    /* background-color: green; */
+    display: block;
+    font-size: x-large;
+    width: 100%;
+    padding-block: 25px;
+    padding-left: 25px;
+}
+
+nav li a:hover {
+    color: red;
+}
+
+
+.open {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+}
+
+
+/* start header -------------------------------------------------------------------- */
+
+.header {
+    position: relative;
+    background-image: linear-gradient( rgba(9,9,237,1) 0%, rgba(4,4,245,0.6054796918767507) 0%), url(../images/events-heavenly-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 25px;
+    height: 650px;
+}
+
+.header h1 {
+    font-size: 72px;
+    padding-block: 25px;
+}
+
+.header p {
+    font-size: xx-large;
+    padding-block: 25px;
+}
+
+/* satrt content ----------------------------------------------------------------------- */
+
+.content {
+    width: 50%;
+    text-align: center;
+    margin-inline: auto;
+    margin-block: 50px;
+    padding-block: 50px;
+}
+
+.content h3 {
+    padding: 25px;
+    background-color:blue;
+    color: white;
+}
+
+.content p {
+    padding: 25px;
+    background-color: #09c;
+    display: none;
+}
+
+.content .active {
+    display: block;
+}
+
+/* satrt join -------------------------------------------------------------------------- */
+
+.join {
+    background-image: linear-gradient( rgba(9,9,237,1) 0%, rgba(4,4,245,0.6054796918767507) 0%), url(../images/invitation.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 50px;
+    margin-block: 50px;
+}
+
+#timer {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: xx-large;
+  }
+  
+  #timer div {
+    display: inline-block;
+    line-height: 1;
+    padding: 20px;
+    font-size: 40px;
+  }
+  
+#timer span {
+    display: block;
+    font-size: 20px;
+    color: white;
+  }
+
+/* satrt contact -------------------------------------------------------------------------- */
+
+.final {
+    display: flex;
+}
+
+.contact {
+    width: 50%;
+    padding: 25px;
+    margin: 25px;
+}
+
+.contact h3, .contact p, .contact i {
+    margin-block: 10px;
+}
+
+.area  {
+   width: 50%;
+    padding: 25px;
+    margin: 25px;
+}
+
+.area input, .area textarea {
+    width: 75%;
+    margin-block: 10px;
+}
